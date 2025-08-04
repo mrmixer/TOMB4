@@ -722,7 +722,7 @@ void phd_PutPolygons(short* objptr, long clip)
 	}
 	else if (mesh->prelight)
 		InitItemDynamicLighting(current_item);
-	else
+	else if ( current_item )
 		InitObjectLighting(current_item);
 
 	clip_left = f_left;
